@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Aarambh Beauty Spa</title>
+    <meta name="description" content="Explore our spa gallery with images of our facilities, treatments, and relaxing environment at Aarambh Beauty Spa">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Aarambh <span>Beauty Spa</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="membership.html" class="nav-link">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="booking.html" class="nav-link btn-book">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Take a visual tour of our spa facilities and treatments</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Images</button>
+                <button class="filter-btn" data-category="spa">Spa Therapy</button>
+                <button class="filter-btn" data-category="salon">Salon Services</button>
+                <button class="filter-btn" data-category="facilities">Facilities</button>
+                <button class="filter-btn" data-category="environment">Environment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Spa Therapy Images -->
+                <div class="gallery-item" data-category="spa">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Swedish Massage Therapy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Swedish Massage</h3>
+                                <p>Relaxing full-body massage therapy</p>
+                                <button class="btn-lightbox" onclick="openLightbox(0)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="spa">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Deep Tissue Massage">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Deep Tissue Massage</h3>
+                                <p>Therapeutic deep muscle treatment</p>
+                                <button class="btn-lightbox" onclick="openLightbox(1)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="spa">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Aroma Therapy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Aroma Therapy</h3>
+                                <p>Essential oil healing treatment</p>
+                                <button class="btn-lightbox" onclick="openLightbox(2)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="spa">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Thai Massage">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Thai Massage</h3>
+                                <p>Traditional stretching therapy</p>
+                                <button class="btn-lightbox" onclick="openLightbox(3)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salon Services Images -->
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1585747860715-3ca5e4540d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Hair Styling">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Professional Hair Styling</h3>
+                                <p>Expert hair cutting and styling</p>
+                                <button class="btn-lightbox" onclick="openLightbox(4)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Facial Treatment">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Facial Treatment</h3>
+                                <p>Rejuvenating skincare therapy</p>
+                                <button class="btn-lightbox" onclick="openLightbox(5)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Manicure Pedicure">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Manicure & Pedicure</h3>
+                                <p>Complete hand and foot care</p>
+                                <button class="btn-lightbox" onclick="openLightbox(6)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nail Art">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Nail Art Design</h3>
+                                <p>Creative nail art services</p>
+                                <button class="btn-lightbox" onclick="openLightbox(7)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities Images -->
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Private Treatment Room">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Private Treatment Rooms</h3>
+                                <p>Luxurious private therapy spaces</p>
+                                <button class="btn-lightbox" onclick="openLightbox(8)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a729c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Steam Room">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Steam Room</h3>
+                                <p>Modern steam therapy facilities</p>
+                                <button class="btn-lightbox" onclick="openLightbox(9)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Relaxation Lounge">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Relaxation Lounge</h3>
+                                <p>Peaceful waiting area</p>
+                                <button class="btn-lightbox" onclick="openLightbox(10)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environment Images -->
+                <div class="gallery-item" data-category="environment">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Spa Reception">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Welcome Reception</h3>
+                                <p>Elegant spa entrance</p>
+                                <button class="btn-lightbox" onclick="openLightbox(11)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="environment">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ambient Lighting">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Ambient Atmosphere</h3>
+                                <p>Tranquil spa environment</p>
+                                <button class="btn-lightbox" onclick="openLightbox(12)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="environment">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Decor Elements">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Spa Decor</h3>
+                                <p>Elegant interior design</p>
+                                <button class="btn-lightbox" onclick="openLightbox(13)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="environment">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Natural Elements">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Natural Elements</h3>
+                                <p>Organic spa design</p>
+                                <button class="btn-lightbox" onclick="openLightbox(14)">
+                                    <i class="fas fa-search-plus"></i> View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <div class="lightbox-image-container">
+                <img id="lightboxImage" src="" alt="Spa Image">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="changeImage(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" onclick="changeImage(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Experience Aarambh Beauty Spa</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Video Thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3>Virtual Tour</h3>
+                        <p>Take a virtual tour of our spa facilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-section">
+        <div class="container">
+            <h2 class="section-title">Follow Us on Instagram</h2>
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Instagram Post 1">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Instagram Post 2">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Instagram Post 3">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Instagram Post 4">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1585747860715-3ca5e4540d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Instagram Post 5">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Instagram Post 6">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-primary" target="_blank">
+                    <i class="fab fa-instagram"></i> Follow @aarambhbeautyspa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Our Spa?</h2>
+                <p>Book your appointment and enjoy the tranquil environment of Aarambh Beauty Spa</p>
+                <a href="booking.html" class="btn-primary">Book Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aarambh Beauty Spa</h3>
+                    <p>Your sanctuary for relaxation and rejuvenation in Indore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Therapy & Massage</a></li>
+                        <li><a href="services.html">Salon Services</a></li>
+                        <li><a href="services.html">Beauty Treatments</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aarambh Beauty Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

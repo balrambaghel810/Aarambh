@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Aarambh Beauty Spa</title>
+    <meta name="description" content="Explore our premium spa and salon services including therapy, massage, and beauty treatments in Indore">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d4af37',
+                        secondary: '#8b7355',
+                        accent: '#c9a961',
+                        'text-dark': '#333333',
+                        'text-light': '#666666',
+                        'text-lighter': '#999999',
+                        'bg-light': '#faf8f5',
+                        'bg-beige': '#f5f0e8',
+                        'border-color': '#e8e0d5'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-spa text-white text-xl"></i>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-2xl font-playfair font-bold text-text-dark">Aarambh</h2>
+                    <p class="text-sm font-poppins text-primary font-medium">Beauty Spa</p>
+                </div>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
+                <li><a href="about.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">About</a></li>
+                <li><a href="services.html" class="nav-link text-primary font-poppins font-medium text-sm uppercase tracking-wide relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-full after:h-0.5 after:bg-primary">Services</a></li>
+                <li><a href="offers.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Offers</a></li>
+                <li><a href="membership.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Contact</a></li>
+                <li><a href="booking.html" class="btn-book bg-primary text-white px-5 py-2.5 rounded-full font-poppins font-semibold text-xs uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger md:hidden flex flex-col cursor-pointer">
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark transition-all duration-300"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-32 text-center mt-20">
+        <div class="max-w-7xl mx-auto px-5">
+            <h1 class="text-5xl font-playfair font-bold mb-4">Our Services</h1>
+            <p class="text-xl opacity-90">Premium spa and salon treatments for your complete wellness</p>
+        </div>
+    </section>
+
+    <!-- Services Filter -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300" data-category="all">All Services</button>
+                <button class="filter-btn bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300" data-category="massage">Massage Therapy</button>
+                <button class="filter-btn bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300" data-category="facial">Facial Treatments</button>
+                <button class="filter-btn bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300" data-category="beauty">Beauty Services</button>
+                <button class="filter-btn bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300" data-category="body">Body Treatments</button>
+                </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-bg-beige">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="massage">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Swedish Massage" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Swedish Massage</h3>
+                        <p class="text-text-light mb-6">Gentle, relaxing full-body massage using long strokes to improve circulation and relieve tension</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">60 min</span>
+                            <span class="text-2xl font-bold text-primary">₹1000</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Swedish Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="massage">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Deep Tissue Massage" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Deep Tissue Massage</h3>
+                        <p class="text-text-light mb-6">Intense massage targeting deep muscle layers to release chronic tension and pain</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">75 min</span>
+                            <span class="text-2xl font-bold text-primary">₹1500</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Deep Tissue Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="massage">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Aroma Therapy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Aroma Therapy Massage</h3>
+                        <p class="text-text-light mb-6">Healing massage using essential oils to promote relaxation and emotional wellbeing</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">90 min</span>
+                            <span class="text-2xl font-bold text-primary">₹2000</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Aroma Therapy Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="facial">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612de973?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Classic Facial" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Classic Facial</h3>
+                        <p class="text-text-light mb-6">Deep cleansing, exfoliation, and nourishing treatment for glowing skin</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">60 min</span>
+                            <span class="text-2xl font-bold text-primary">₹800</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Classic Facial')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="facial">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Anti-Aging Facial" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Anti-Aging Facial</h3>
+                        <p class="text-text-light mb-6">Advanced treatment with collagen boost to reduce fine lines and wrinkles</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">75 min</span>
+                            <span class="text-2xl font-bold text-primary">₹1500</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Anti-Aging Facial')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="beauty">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560066984-a9d62a70067c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Hair Spa" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Hair Spa Treatment</h3>
+                        <p class="text-text-light mb-6">Deep conditioning treatment for healthy, shiny, and manageable hair</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">45 min</span>
+                            <span class="text-2xl font-bold text-primary">₹600</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Hair Spa Treatment')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="beauty">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1499557354967-4b5dcd6ed837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Manicure Pedicure" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Manicure & Pedicure</h3>
+                        <p class="text-text-light mb-6">Complete nail care treatment with massage and polish for hands and feet</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">90 min</span>
+                            <span class="text-2xl font-bold text-primary">₹1200</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Manicure & Pedicure')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="body">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Body Wrap" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Detox Body Wrap</h3>
+                        <p class="text-text-light mb-6">Full body detoxification treatment with natural ingredients and hydration</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">60 min</span>
+                            <span class="text-2xl font-bold text-primary">₹1800</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Detox Body Wrap')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300" data-category="body">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Steam Bath" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Steam Bath</h3>
+                        <p class="text-text-light mb-6">Therapeutic steam treatment for relaxation, detoxification, and skin cleansing</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="bg-bg-beige text-primary px-4 py-2 rounded-full font-semibold">30 min</span>
+                            <span class="text-2xl font-bold text-primary">₹500</span>
+                        </div>
+                        <button class="btn-book-service w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1" onclick="bookService('Steam Bath')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918889646119" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 bg-black/50 z-40 hidden" id="mobileMenuOverlay"></div>
+    <div class="fixed top-20 left-0 w-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 md:hidden" id="mobileMenu">
+        <ul class="py-4 space-y-2">
+            <li><a href="index.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Home</a></li>
+            <li><a href="about.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">About</a></li>
+            <li><a href="services.html" class="block px-6 py-3 text-primary font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Services</a></li>
+            <li><a href="offers.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Offers</a></li>
+            <li><a href="membership.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Membership</a></li>
+            <li><a href="gallery.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Gallery</a></li>
+            <li><a href="blog.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Blog</a></li>
+            <li><a href="reviews.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Reviews</a></li>
+            <li><a href="contact.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Contact</a></li>
+            <li><a href="booking.html" class="block mx-6 mt-4 bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 text-center">Book Appointment</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                            <span class="duration">60 min</span>
+                            <span class="price">₹1000</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Aroma Therapy Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="therapy">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Thai Massage">
+                    </div>
+                    <div class="service-content">
+                        <h3>Thai Massage</h3>
+                        <p>Ancient healing system combining acupressure, stretching and compression</p>
+                        <div class="service-details">
+                            <span class="duration">90 min</span>
+                            <span class="price">₹1500</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Thai Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="therapy">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Body Scrub">
+                    </div>
+                    <div class="service-content">
+                        <h3>Body Scrub</h3>
+                        <p>Exfoliating treatment to remove dead skin cells and reveal smooth, radiant skin</p>
+                        <div class="service-details">
+                            <span class="duration">45 min</span>
+                            <span class="price">₹3000</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Body Scrub')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="therapy">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Dry Brushing">
+                    </div>
+                    <div class="service-content">
+                        <h3>Dry Brushing</h3>
+                        <p>Natural exfoliation technique to improve circulation and lymphatic drainage</p>
+                        <div class="service-details">
+                            <span class="duration">30 min</span>
+                            <span class="price">₹1200</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Dry Brushing')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="therapy">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Wine Massage">
+                    </div>
+                    <div class="service-content">
+                        <h3>Wine Massage</h3>
+                        <p>Luxurious massage using antioxidant-rich wine extracts for skin rejuvenation</p>
+                        <div class="service-details">
+                            <span class="duration">75 min</span>
+                            <span class="price">₹1800</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Wine Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="therapy">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Chocolate Massage">
+                    </div>
+                    <div class="service-content">
+                        <h3>Chocolate Massage</h3>
+                        <p>Indulgent chocolate-infused massage for deep relaxation and skin nourishment</p>
+                        <div class="service-details">
+                            <span class="duration">75 min</span>
+                            <span class="price">₹1800</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Chocolate Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="therapy">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Four Hand Massage">
+                    </div>
+                    <div class="service-content">
+                        <h3>Four Hand Massage</h3>
+                        <p>Ultimate relaxation with two therapists working in perfect synchronization</p>
+                        <div class="service-details">
+                            <span class="duration">90 min</span>
+                            <span class="price">₹1800</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Four Hand Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="therapy">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ayurveda Therapy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Ayurveda Therapy</h3>
+                        <p>Traditional Ayurvedic treatments using herbal oils for holistic healing</p>
+                        <div class="service-details">
+                            <span class="duration">60 min</span>
+                            <span class="price">₹1200</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Ayurveda Therapy')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salon Services -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Salon Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1585747860715-3ca5e4540d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Hair Cut">
+                    </div>
+                    <div class="service-content">
+                        <h3>Hair Cut</h3>
+                        <p>Professional hair styling and cutting services by expert hairdressers</p>
+                        <div class="service-details">
+                            <span class="duration">30 min</span>
+                            <span class="price">₹270</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Hair Cut')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Head Massage">
+                    </div>
+                    <div class="service-content">
+                        <h3>Head Massage</h3>
+                        <p>Relaxing scalp massage to relieve stress and promote hair health</p>
+                        <div class="service-details">
+                            <span class="duration">30 min</span>
+                            <span class="price">₹300</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Head Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Face Massage">
+                    </div>
+                    <div class="service-content">
+                        <h3>Face Massage</h3>
+                        <p>Gentle facial massage to improve circulation and skin glow</p>
+                        <div class="service-details">
+                            <span class="duration">20 min</span>
+                            <span class="price">₹300</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Face Massage')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1570172619644-d32a495b5766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Facial">
+                    </div>
+                    <div class="service-content">
+                        <h3>Facial</h3>
+                        <p>Rejuvenating facial treatment for glowing, healthy skin</p>
+                        <div class="service-details">
+                            <span class="duration">45 min</span>
+                            <span class="price">₹800</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Facial')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="D-Tan">
+                    </div>
+                    <div class="service-content">
+                        <h3>D-Tan</h3>
+                        <p>Professional de-tanning treatment to remove sun damage and even skin tone</p>
+                        <div class="service-details">
+                            <span class="duration">40 min</span>
+                            <span class="price">₹500</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('D-Tan')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Full Body Wax">
+                    </div>
+                    <div class="service-content">
+                        <h3>Full Body Wax</h3>
+                        <p>Complete body waxing for smooth, hair-free skin</p>
+                        <div class="service-details">
+                            <span class="duration">90 min</span>
+                            <span class="price">₹3000</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Full Body Wax')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Half Body Wax">
+                    </div>
+                    <div class="service-content">
+                        <h3>Half Body Wax</h3>
+                        <p>Partial body waxing services for specific areas</p>
+                        <div class="service-details">
+                            <span class="duration">45 min</span>
+                            <span class="price">₹1600</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Half Body Wax')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Eyebrow / Upper Lips">
+                    </div>
+                    <div class="service-content">
+                        <h3>Eyebrow / Upper Lips</h3>
+                        <p>Precise eyebrow shaping and upper lip threading</p>
+                        <div class="service-details">
+                            <span class="duration">15 min</span>
+                            <span class="price">₹50</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Eyebrow / Upper Lips')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nail Arts">
+                    </div>
+                    <div class="service-content">
+                        <h3>Nail Arts</h3>
+                        <p>Creative nail art designs and extensions</p>
+                        <div class="service-details">
+                            <span class="duration">60 min</span>
+                            <span class="price">₹2500</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Nail Arts')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Manicure + Pedicure">
+                    </div>
+                    <div class="service-content">
+                        <h3>Manicure + Pedicure</h3>
+                        <p>Complete hand and foot care treatment</p>
+                        <div class="service-details">
+                            <span class="duration">75 min</span>
+                            <span class="price">₹2000</span>
+                        </div>
+                        <button class="btn-book-service" onclick="bookService('Manicure + Pedicure')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aarambh Beauty Spa</h3>
+                    <p>Your sanctuary for relaxation and rejuvenation in Indore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Therapy & Massage</a></li>
+                        <li><a href="services.html">Salon Services</a></li>
+                        <li><a href="services.html">Beauty Treatments</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aarambh Beauty Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aarambh Beauty Spa</title>
+    <meta name="description" content="Contact Aarambh Beauty Spa in Indore - visit us at Zodiac Mall, Bicholi Mardana or call us for appointments">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d4af37',
+                        secondary: '#8b7355',
+                        accent: '#c9a961',
+                        'text-dark': '#333333',
+                        'text-light': '#666666',
+                        'text-lighter': '#999999',
+                        'bg-light': '#faf8f5',
+                        'bg-beige': '#f5f0e8',
+                        'border-color': '#e8e0d5'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-spa text-white text-xl"></i>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-2xl font-playfair font-bold text-text-dark">Aarambh</h2>
+                    <p class="text-sm font-poppins text-primary font-medium">Beauty Spa</p>
+                </div>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
+                <li><a href="about.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">About</a></li>
+                <li><a href="services.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Services</a></li>
+                <li><a href="offers.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Offers</a></li>
+                <li><a href="membership.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link text-primary font-poppins font-medium text-sm uppercase tracking-wide relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-full after:h-0.5 after:bg-primary">Contact</a></li>
+                <li><a href="booking.html" class="btn-book bg-primary text-white px-5 py-2.5 rounded-full font-poppins font-semibold text-xs uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger md:hidden flex flex-col cursor-pointer">
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark transition-all duration-300"></span>
+            </div>
+        </div>
+    </nav>
+                <!-- Page Header -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-32 text-center mt-20">
+        <div class="max-w-7xl mx-auto px-5">
+            <h1 class="text-5xl font-playfair font-bold mb-4">Contact Us</h1>
+            <p class="text-xl opacity-90">Get in touch with Aarambh Beauty Spa for appointments and inquiries</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-map-marker-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Visit Our Spa</h3>
+                    <p class="text-text-light mb-6 leading-relaxed">Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School<br>Indore, Madhya Pradesh</p>
+                    <a href="https://maps.google.com/?q=Zodiac+Mall+Bicholi+Mardana+Indore" target="_blank" class="inline-block bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-1">Get Directions</a>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Call Us</h3>
+                    <p class="text-text-light mb-6">+91 8889646119<br>+91 8889646119</p>
+                    <a href="tel:+918889646119" class="inline-block bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-1">Call Now</a>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Email Us</h3>
+                    <p class="text-text-light mb-6">info@aarambhbeautyspa.com<br>appointments@aarambhbeautyspa.com</p>
+                    <a href="mailto:info@aarambhbeautyspa.com" class="inline-block bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-1">Send Email</a>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Working Hours</h3>
+                    <p class="text-text-light mb-6">Monday - Sunday<br>9:00 AM - 9:00 PM<br>All days open</p>
+                    <a href="booking.html" class="inline-block bg-transparent text-primary border-2 border-primary px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-1">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+                        <!-- Map Section -->
+    <section class="py-20 bg-bg-beige">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Find Us on Map</h2>
+            <div class="map-container mt-12">
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.987654321!2d75.85773331504214!3d22.71957578511329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd3f5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2sZodiac%20Mall%2C%20Bicholi%20Mardana%2C%20Indore!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        class="w-full">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Send Us a Message</h2>
+            <div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-xl border border-border-color">
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="form-group">
+                            <label for="contactName" class="block text-text-dark font-poppins font-medium mb-2">Your Name *</label>
+                            <input type="text" id="contactName" name="contactName" required class="w-full px-4 py-3 border-2 border-border-color rounded-lg font-poppins text-text-dark focus:outline-none focus:border-primary transition-colors duration-300">
+                            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="block text-text-dark font-poppins font-medium mb-2">Email Address *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required class="w-full px-4 py-3 border-2 border-border-color rounded-lg font-poppins text-text-dark focus:outline-none focus:border-primary transition-colors duration-300">
+                            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="form-group">
+                            <label for="contactPhone" class="block text-text-dark font-poppins font-medium mb-2">Phone Number *</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" required class="w-full px-4 py-3 border-2 border-border-color rounded-lg font-poppins text-text-dark focus:outline-none focus:border-primary transition-colors duration-300">
+                            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" class="block text-text-dark font-poppins font-medium mb-2">Subject *</label>
+                            <select id="contactSubject" name="contactSubject" required class="w-full px-4 py-3 border-2 border-border-color rounded-lg font-poppins text-text-dark focus:outline-none focus:border-primary transition-colors duration-300">
+                                <option value="">Select a subject</option>
+                                <option value="appointment">Appointment Inquiry</option>
+                                <option value="service">Service Information</option>
+                                <option value="membership">Membership Details</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage" class="block text-text-dark font-poppins font-medium mb-2">Message *</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="6" required class="w-full px-4 py-3 border-2 border-border-color rounded-lg font-poppins text-text-dark focus:outline-none focus:border-primary transition-colors duration-300"></textarea>
+                        <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label class="checkbox-label flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox" id="contactTerms" name="contactTerms" required class="hidden">
+                            <span class="checkmark w-5 h-5 border-2 border-border-color rounded flex items-center justify-center transition-all duration-300"></span>
+                            <span class="text-text-light font-poppins">I agree to the terms and conditions</span>
+                        </label>
+                        <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+                    </div>
+
+                    <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+                        <!-- FAQ Section -->
+    <section class="py-20 bg-bg-beige">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                <div class="faq-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="faq-question p-6 flex justify-between items-center cursor-pointer hover:bg-bg-beige transition-colors duration-300">
+                        <h4 class="text-text-dark font-poppins font-semibold">Do I need to book an appointment in advance?</h4>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-text-light font-poppins pb-6">While walk-ins are welcome, we highly recommend booking an appointment in advance to ensure availability and avoid waiting times.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="faq-question p-6 flex justify-between items-center cursor-pointer hover:bg-bg-beige transition-colors duration-300">
+                        <h4 class="text-text-dark font-poppins font-semibold">What payment methods do you accept?</h4>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-text-light font-poppins pb-6">We accept cash, credit/debit cards, UPI, and digital wallets. We also accept payment through our membership packages.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="faq-question p-6 flex justify-between items-center cursor-pointer hover:bg-bg-beige transition-colors duration-300">
+                        <h4 class="text-text-dark font-poppins font-semibold">How early should I arrive for my appointment?</h4>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-text-light font-poppins pb-6">We recommend arriving 10-15 minutes before your scheduled appointment to allow time for check-in and preparation.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="faq-question p-6 flex justify-between items-center cursor-pointer hover:bg-bg-beige transition-colors duration-300">
+                        <h4 class="text-text-dark font-poppins font-semibold">Do you offer group packages or corporate discounts?</h4>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-text-light font-poppins pb-6">Yes, we offer special packages for groups and corporate clients. Please contact us directly for customized packages and pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-8 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Connect With Us</h2>
+            <p class="text-center text-text-light mb-12">Follow us on social media for updates, offers, and wellness tips</p>
+            <div class="flex justify-center gap-8 flex-wrap mt-12">
+                <a href="#" class="social-link flex items-center gap-4 px-8 py-4 bg-bg-beige rounded-xl hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-2">
+                    <i class="fab fa-facebook text-2xl"></i>
+                    <div class="text-left">
+                        <h4 class="font-semibold">Facebook</h4>
+                        <p class="text-sm opacity-80">@aarambhbeautyspa</p>
+                    </div>
+                </a>
+                <a href="#" class="social-link flex items-center gap-4 px-8 py-4 bg-bg-beige rounded-xl hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-2">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <div class="text-left">
+                        <h4 class="font-semibold">Instagram</h4>
+                        <p class="text-sm opacity-80">@aarambhbeautyspa</p>
+                    </div>
+                </a>
+                <a href="#" class="social-link flex items-center gap-4 px-8 py-4 bg-bg-beige rounded-xl hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-2">
+                    <i class="fab fa-twitter text-2xl"></i>
+                    <div class="text-left">
+                        <h4 class="font-semibold">Twitter</h4>
+                        <p class="text-sm opacity-80">@aarambhspa</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918889646119" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 bg-black/50 z-40 hidden" id="mobileMenuOverlay"></div>
+    <div class="fixed top-20 left-0 w-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 md:hidden" id="mobileMenu">
+        <ul class="py-4 space-y-2">
+            <li><a href="index.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Home</a></li>
+            <li><a href="about.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">About</a></li>
+            <li><a href="services.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Services</a></li>
+            <li><a href="offers.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Offers</a></li>
+            <li><a href="membership.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Membership</a></li>
+            <li><a href="gallery.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Gallery</a></li>
+            <li><a href="blog.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Blog</a></li>
+            <li><a href="reviews.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Reviews</a></li>
+            <li><a href="contact.html" class="block px-6 py-3 text-primary font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Contact</a></li>
+            <li><a href="booking.html" class="block mx-6 mt-4 bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 text-center">Book Appointment</a></li>
+        </ul>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="contactSuccessModal" class="modal fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-2xl max-w-md w-full mx-5 transform transition-all duration-300">
+            <div class="modal-header p-6 border-b border-border-color flex justify-between items-center">
+                <h3 class="text-2xl font-playfair font-bold text-text-dark">Message Sent!</h3>
+                <button class="close-modal-btn text-text-light hover:text-text-dark transition-colors duration-300">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="modal-body p-6">
+                <div class="success-icon w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-check text-white text-3xl"></i>
+                </div>
+                <p class="text-text-light text-center mb-4">Thank you for contacting us! We have received your message and will get back to you within 24 hours.</p>
+                <p class="text-text-light text-center">For urgent inquiries, please call us at +91 8889646119</p>
+            </div>
+            <div class="modal-footer p-6 border-t border-border-color text-center">
+                <button class="close-modal-btn bg-primary text-white px-8 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While we accept walk-ins subject to availability, we highly recommend booking appointments in advance to ensure you get your preferred time slot, especially during weekends and holidays.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What should I wear for my spa treatment?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide disposable garments and robes for most treatments. Wear comfortable clothing to the spa. For specific treatments like waxing, you may need to remove certain clothing items.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Are your products safe for sensitive skin?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we use high-quality, natural, and hypoallergenic products. However, please inform our staff about any skin sensitivities or allergies before your treatment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer couple treatments?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer couple massage packages in private rooms. These are perfect for anniversaries, dates, or simply enjoying a relaxing experience together.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What payment methods do you accept?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept cash, credit/debit cards, UPI, and mobile wallet payments. We also accept payment through our membership packages.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Is parking available at your location?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Zodiac Mall has ample parking space available for our customers. The first hour of parking is free for spa visitors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            <p>Follow us on social media for updates, offers, and wellness tips</p>
+            <div class="social-links-large">
+                <a href="#" class="social-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <div class="social-info">
+                        <h4>Facebook</h4>
+                        <p>@aarambhbeautyspa</p>
+                    </div>
+                </a>
+                <a href="#" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <div class="social-info">
+                        <h4>Instagram</h4>
+                        <p>@aarambhbeautyspa</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/91XXXXXXXXXX" class="social-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="social-info">
+                        <h4>WhatsApp</h4>
+                        <p>+91 XXXXX XXXXX</p>
+                    </div>
+                </a>
+                <a href="#" class="social-link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <div class="social-info">
+                        <h4>YouTube</h4>
+                        <p>Aarambh Beauty Spa</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="contactSuccessModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Message Sent Successfully!</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p>Thank you for contacting Aarambh Beauty Spa!</p>
+                <p>We have received your message and will get back to you within 24 hours.</p>
+                <p>For urgent inquiries, please call us at +91 XXXXX XXXXX</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary close-modal-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Visit Us?</h2>
+                <p>Book your appointment and experience the tranquility of Aarambh Beauty Spa</p>
+                <a href="booking.html" class="btn-primary">Book Your Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aarambh Beauty Spa</h3>
+                    <p>Your sanctuary for relaxation and rejuvenation in Indore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Therapy & Massage</a></li>
+                        <li><a href="services.html">Salon Services</a></li>
+                        <li><a href="services.html">Beauty Treatments</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aarambh Beauty Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

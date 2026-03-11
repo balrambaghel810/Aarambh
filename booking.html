@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Aarambh Beauty Spa</title>
+    <meta name="description" content="Book your appointment at Aarambh Beauty Spa for premium spa and salon services in Indore">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Aarambh <span>Beauty Spa</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="membership.html" class="nav-link">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="booking.html" class="nav-link btn-book">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule your relaxation session at Aarambh Beauty Spa</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-form-container">
+                    <h2>Appointment Details</h2>
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Select Service *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Choose a service...</option>
+                                    <optgroup label="Therapy Services">
+                                        <option value="Swedish Massage - ₹1000">Swedish Massage - ₹1000</option>
+                                        <option value="Deep Tissue Massage - ₹1500">Deep Tissue Massage - ₹1500</option>
+                                        <option value="Aroma Therapy Massage - ₹1000">Aroma Therapy Massage - ₹1000</option>
+                                        <option value="Thai Massage - ₹1500">Thai Massage - ₹1500</option>
+                                        <option value="Body Scrub - ₹3000">Body Scrub - ₹3000</option>
+                                        <option value="Dry Brushing - ₹1200">Dry Brushing - ₹1200</option>
+                                        <option value="Wine Massage - ₹1800">Wine Massage - ₹1800</option>
+                                        <option value="Chocolate Massage - ₹1800">Chocolate Massage - ₹1800</option>
+                                        <option value="Four Hand Massage - ₹1800">Four Hand Massage - ₹1800</option>
+                                        <option value="Ayurveda Therapy - ₹1200">Ayurveda Therapy - ₹1200</option>
+                                    </optgroup>
+                                    <optgroup label="Salon Services">
+                                        <option value="Hair Cut - ₹270">Hair Cut - ₹270</option>
+                                        <option value="Head Massage - ₹300">Head Massage - ₹300</option>
+                                        <option value="Face Massage - ₹300">Face Massage - ₹300</option>
+                                        <option value="Facial - ₹800">Facial - ₹800</option>
+                                        <option value="D-Tan - ₹500">D-Tan - ₹500</option>
+                                        <option value="Full Body Wax - ₹3000">Full Body Wax - ₹3000</option>
+                                        <option value="Half Body Wax - ₹1600">Half Body Wax - ₹1600</option>
+                                        <option value="Eyebrow / Upper Lips - ₹50">Eyebrow / Upper Lips - ₹50</option>
+                                        <option value="Nail Arts - ₹2500">Nail Arts - ₹2500</option>
+                                        <option value="Manicure + Pedicure - ₹2000">Manicure + Pedicure - ₹2000</option>
+                                    </optgroup>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time...</option>
+                                    <option value="09:00 AM">09:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="01:00 PM">01:00 PM</option>
+                                    <option value="02:00 PM">02:00 PM</option>
+                                    <option value="03:00 PM">03:00 PM</option>
+                                    <option value="04:00 PM">04:00 PM</option>
+                                    <option value="05:00 PM">05:00 PM</option>
+                                    <option value="06:00 PM">06:00 PM</option>
+                                    <option value="07:00 PM">07:00 PM</option>
+                                    <option value="08:00 PM">08:00 PM</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any special requirements or preferences..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the terms and conditions and understand that this is a booking request, not a confirmed appointment
+                            </label>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Submit Booking Request</button>
+                    </form>
+                </div>
+
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h3>Booking Information</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Booking requests are confirmed within 2 hours</li>
+                            <li><i class="fas fa-check-circle"></i> Please arrive 15 minutes before your appointment</li>
+                            <li><i class="fas fa-check-circle"></i> Cancellations must be made 4 hours in advance</li>
+                            <li><i class="fas fa-check-circle"></i> Payment can be made at the spa</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 9:00 AM - 9:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Special Offers</h3>
+                        <p><strong>First Visit Discount:</strong> 10% off on your first service</p>
+                        <p><strong>Weekend Special:</strong> 20% off on all massages</p>
+                        <p><strong>Couple Package:</strong> Save 25% on couple treatments</p>
+                        <a href="offers.html" class="btn-secondary">View All Offers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Booking Request Received!</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p>Thank you for choosing Aarambh Beauty Spa!</p>
+                <p>Your appointment request has been received. We will confirm your booking within 2 hours via phone call or WhatsApp message.</p>
+                <div class="booking-details" id="bookingDetails"></div>
+                <p>For urgent inquiries, please call us at +91 XXXXX XXXXX</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary close-modal-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aarambh Beauty Spa</h3>
+                    <p>Your sanctuary for relaxation and rejuvenation in Indore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Therapy & Massage</a></li>
+                        <li><a href="services.html">Salon Services</a></li>
+                        <li><a href="services.html">Beauty Treatments</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aarambh Beauty Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

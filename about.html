@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aarambh Beauty Spa</title>
+    <meta name="description" content="Learn about Aarambh Beauty Spa - our story, professional therapists, and premium spa experience in Indore">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d4af37',
+                        secondary: '#8b7355',
+                        accent: '#c9a961',
+                        'text-dark': '#333333',
+                        'text-light': '#666666',
+                        'text-lighter': '#999999',
+                        'bg-light': '#faf8f5',
+                        'bg-beige': '#f5f0e8',
+                        'border-color': '#e8e0d5'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-spa text-white text-xl"></i>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-2xl font-playfair font-bold text-text-dark">Aarambh</h2>
+                    <p class="text-sm font-poppins text-primary font-medium">Beauty Spa</p>
+                </div>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
+                <li><a href="about.html" class="nav-link text-primary font-poppins font-medium text-sm uppercase tracking-wide relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-full after:h-0.5 after:bg-primary">About</a></li>
+                <li><a href="services.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Services</a></li>
+                <li><a href="offers.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Offers</a></li>
+                <li><a href="membership.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Contact</a></li>
+                <li><a href="booking.html" class="btn-book bg-primary text-white px-5 py-2.5 rounded-full font-poppins font-semibold text-xs uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger md:hidden flex flex-col cursor-pointer">
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark transition-all duration-300"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-32 text-center mt-20">
+        <div class="max-w-7xl mx-auto px-5">
+            <h1 class="text-5xl font-playfair font-bold mb-4">About Aarambh Beauty Spa</h1>
+            <p class="text-xl opacity-90">Discover our story and commitment to excellence</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-playfair font-bold mb-6 text-text-dark">Our Story</h2>
+                    <p class="text-text-light mb-4 leading-relaxed">Welcome to Aarambh Beauty Spa, your premier destination for relaxation and rejuvenation in Indore. Founded with a vision to create a sanctuary where modern wellness meets traditional healing, we have been serving our community with excellence since our inception.</p>
+                    
+                    <p class="text-text-light mb-6 leading-relaxed">Located conveniently at Zodiac Mall in Bicholi Mardana, near Agrawal Public School, our spa offers a tranquil escape from the hustle and bustle of daily life. We believe that true beauty and wellness come from within, and our treatments are designed to restore balance to both body and mind.</p>
+
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Our Philosophy</h3>
+                    <p class="text-text-light mb-6 leading-relaxed">At Aarambh Beauty Spa, we follow a holistic approach to wellness. Our philosophy is rooted in the belief that every individual deserves to experience moments of pure relaxation and self-care. We combine ancient therapeutic techniques with modern wellness practices to deliver exceptional results.</p>
+
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Professional Excellence</h3>
+                    <p class="text-text-light mb-6 leading-relaxed">Our team of certified therapists and beauty experts are dedicated to providing personalized care tailored to your specific needs. Each member of our staff is extensively trained in their respective fields and committed to maintaining the highest standards of service and hygiene.</p>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Spa Interior" class="w-full h-96 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-bg-beige">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Why Choose Aarambh Beauty Spa</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-md text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Expert Therapists</h3>
+                    <p class="text-text-light">Certified professionals with years of experience in spa therapy and beauty treatments</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Natural Products</h3>
+                    <p class="text-text-light">We use only premium, natural, and organic products for all our treatments</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-spa text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Peaceful Environment</h3>
+                    <p class="text-text-light">Tranquil ambiance designed to enhance your relaxation experience</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Quality Assured</h3>
+                    <p>Maintaining highest standards of hygiene and service excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559839734-f1b5bc2c2ec9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Team Member" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">Dr. Priya Nair</h3>
+                        <p class="text-primary font-semibold mb-3">Head Spa Therapist</p>
+                        <p class="text-text-light">15+ years of experience in holistic wellness and massage therapy</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Team Member" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">Anjali Sharma</h3>
+                        <p class="text-primary font-semibold mb-3">Senior Beauty Expert</p>
+                        <p class="text-text-light">Specialized in advanced skincare and beauty treatments</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594824476965-4878b5e1f7cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Team Member" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">Rohit Kumar</h3>
+                        <p class="text-primary font-semibold mb-3">Massage Specialist</p>
+                        <p class="text-text-light">Expert in Swedish, Deep Tissue, and Thai massage techniques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="py-20 bg-bg-beige">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Our Facilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Private Treatment Rooms" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Private Treatment Rooms</h3>
+                        <p class="text-text-light">Spacious, private rooms designed for your comfort and privacy</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Relaxation Lounge" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">Relaxation Lounge</h3>
+                        <p class="text-text-light">Comfortable waiting area with herbal tea and refreshments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918889646119" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 bg-black/50 z-40 hidden" id="mobileMenuOverlay"></div>
+    <div class="fixed top-20 left-0 w-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 md:hidden" id="mobileMenu">
+        <ul class="py-4 space-y-2">
+            <li><a href="index.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Home</a></li>
+            <li><a href="about.html" class="block px-6 py-3 text-primary font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">About</a></li>
+            <li><a href="services.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Services</a></li>
+            <li><a href="offers.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Offers</a></li>
+            <li><a href="membership.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Membership</a></li>
+            <li><a href="gallery.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Gallery</a></li>
+            <li><a href="blog.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Blog</a></li>
+            <li><a href="reviews.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Reviews</a></li>
+            <li><a href="contact.html" class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300">Contact</a></li>
+            <li><a href="booking.html" class="block mx-6 mt-4 bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 text-center">Book Appointment</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Relaxation Lounge">
+                    <h3>Relaxation Lounge</h3>
+                    <p>Peaceful waiting area with herbal tea and light refreshments</p>
+                </div>
+                <div class="facility-item">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a729c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Steam Room">
+                    <h3>Steam Room</h3>
+                    <p>Modern steam facilities for detoxification and relaxation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience True Relaxation?</h2>
+                <p>Book your appointment today and discover the Aarambh Beauty Spa difference</p>
+                <a href="booking.html" class="btn-primary">Book Your Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <!-- Footer -->
+    <footer class="bg-text-dark text-white py-16">
+      <div class="max-w-7xl mx-auto px-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <div class="flex items-center space-x-3 mb-6">
+              <div
+                class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-spa text-white text-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-playfair font-bold text-text-dark">
+                  Aarambh
+                </h3>
+                <p class="text-sm text-primary font-medium">Beauty Spa</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Your premium destination for relaxation and rejuvenation in the
+              heart of Indore.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-primary">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="offers.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Offers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="membership.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-primary">
+              Our Services
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Swedish Massage</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Aroma Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Facial Treatments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Hair Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Body Treatments</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-primary">
+              Contact Info
+            </h4>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-map-marker-alt text-primary mr-2"></i> Zodiac
+              Mall, Bicholi Mardana
+            </p>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-map-marker-alt text-primary mr-2"></i> Near
+              Agrawal Public School, Indore
+            </p>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-phone text-primary mr-2"></i> +91 8889646119
+            </p>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-envelope text-primary mr-2"></i>
+              info@aarambhbeautyspa.com
+            </p>
+            <p class="text-gray-300">
+              <i class="fas fa-clock text-primary mr-2"></i> Mon-Sun: 9:00 AM -
+              9:00 PM
+            </p>
+          </div>
+        </div>
+        <div class="text-center pt-8 border-t border-gray-700">
+          <p class="text-gray-400">
+            &copy; 2024 Aarambh Beauty Spa. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <!-- <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

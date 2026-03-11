@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aarambh Beauty Spa - Relax, Rejuvenate, Refresh</title>
+    <meta
+      name="description"
+      content="Premium spa and salon in Indore offering therapy, massage, and beauty services"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#d4af37",
+              secondary: "#8b7355",
+              accent: "#c9a961",
+              "text-dark": "#333333",
+              "text-light": "#666666",
+              "text-lighter": "#999999",
+              "bg-light": "#faf8f5",
+              "bg-beige": "#f5f0e8",
+              "border-color": "#e8e0d5",
+            },
+            fontFamily: {
+              playfair: ["Playfair Display", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center">
+            <img src="./img/aarambhlogo.png" alt="" />
+          </div>
+          <div class="text-left">
+            <h2 class="text-2xl font-playfair font-bold text-text-dark">
+              Aarambh
+            </h2>
+            <p class="text-sm font-poppins text-primary font-medium">
+              Beauty Spa
+            </p>
+          </div>
+        </div>
+        <ul class="hidden md:flex items-center space-x-8">
+          <li>
+            <a
+              href="index.html"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Offers</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Membership</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Reviews</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="btn-book bg-primary text-white px-5 py-2.5 rounded-full font-poppins font-semibold text-xs uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+              >Book Appointment</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger md:hidden flex flex-col cursor-pointer">
+          <span
+            class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"
+          ></span>
+          <span
+            class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"
+          ></span>
+          <span
+            class="w-6 h-0.5 bg-text-dark transition-all duration-300"
+          ></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="h-screen bg-gradient-to-br from-black/40 to-black/40 bg-cover bg-center flex items-center justify-center text-white relative"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80&quot;);
+      "
+    >
+      <div class="max-w-4xl mx-auto px-5 text-center animate-fade-in-up">
+        <h1
+          class="text-5xl md:text-6xl font-playfair font-bold mb-5 drop-shadow-lg"
+        >
+          Relax, Rejuvenate, Refresh
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
+          Experience tranquility at Aarambh Beauty Spa
+        </p>
+        <div class="flex flex-col sm:flex-row gap-5 justify-center">
+          <a
+            href="#"
+            class="bg-primary text-white px-8 py-4 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1 hover:shadow-xl inline-block"
+            >Book Appointment</a
+          >
+          <a
+            href="#"
+            class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-white hover:text-text-dark transition-all duration-300 hover:-translate-y-1 inline-block"
+            >View Services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-5">
+        <h2
+          class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary"
+        >
+          Our Premium Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div
+            class="bg-white p-10 rounded-2xl text-center shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-spa text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">
+              Swedish Massage
+            </h3>
+            <p class="text-text-light mb-6">
+              Relaxing full-body massage to relieve tension
+            </p>
+            <span
+              class="inline-block bg-bg-beige text-primary px-6 py-2 rounded-full font-semibold text-lg"
+              >₹1000</span
+            >
+          </div>
+          <div
+            class="bg-white p-10 rounded-2xl text-center shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-leaf text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">
+              Aroma Therapy
+            </h3>
+            <p class="text-text-light mb-6">
+              Healing essential oils for deep relaxation
+            </p>
+            <span
+              class="inline-block bg-bg-beige text-primary px-6 py-2 rounded-full font-semibold text-lg"
+              >₹1000</span
+            >
+          </div>
+          <div
+            class="bg-white p-10 rounded-2xl text-center shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-cut text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-playfair font-bold mb-4 text-text-dark">
+              Hair & Beauty
+            </h3>
+            <p class="text-text-light mb-6">
+              Professional salon services for complete care
+            </p>
+            <span
+              class="inline-block bg-bg-beige text-primary px-6 py-2 rounded-full font-semibold text-lg"
+              >Starting ₹270</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="py-20 bg-bg-beige">
+      <div class="max-w-7xl mx-auto px-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-playfair font-bold mb-6 text-text-dark">
+              Welcome to Aarambh Beauty Spa
+            </h2>
+            <p class="text-text-light mb-4 leading-relaxed">
+              Located in the heart of Indore at Zodiac Mall, we offer a
+              sanctuary of peace and rejuvenation. Our professional therapists
+              provide premium spa experiences designed to restore your body and
+              mind.
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-primary text-white px-8 py-4 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >Learn More</a
+            >
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="Spa Interior"
+              class="w-full h-96 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-5">
+        <h2
+          class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary"
+        >
+          Current Offers
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl border-2 border-primary hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+          >
+            <div
+              class="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold"
+            >
+              LIMITED TIME
+            </div>
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">
+                Weekend Relax Offer
+              </h3>
+              <div class="text-3xl font-bold text-primary">20% OFF</div>
+            </div>
+            <p class="text-text-light mb-6">
+              Get 20% discount on all massage therapies every Saturday and
+              Sunday
+            </p>
+            <a
+              href="#"
+              class="block w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300"
+              >View Details</a
+            >
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl border border-border-color hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+          >
+            <div
+              class="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold"
+            >
+              FESTIVAL SPECIAL
+            </div>
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">
+                Festival Glow Offer
+              </h3>
+              <div class="text-3xl font-bold text-primary">FREE</div>
+            </div>
+            <p class="text-text-light mb-6">
+              Free Head Massage worth ₹300 with any Facial treatment
+            </p>
+            <a
+              href="#"
+              class="block w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300"
+              >Claim Offer</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership Preview -->
+    <section class="py-20 bg-bg-beige">
+      <div class="max-w-7xl mx-auto px-5">
+        <h2
+          class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary"
+        >
+          Join Our Membership Program
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div
+            class="bg-white p-8 rounded-2xl text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+          >
+            <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">
+              Silver
+            </h3>
+            <div class="text-3xl font-bold text-primary mb-6">
+              ₹3000<span class="text-sm font-normal">/year</span>
+            </div>
+            <ul class="text-left mb-8 space-y-3">
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light"
+                  >10% discount on all services</span
+                >
+              </li>
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light">Priority booking</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300"
+              >Join Now</a
+            >
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl text-center shadow-xl border-2 border-primary hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative transform scale-105"
+          >
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-semibold"
+            >
+              POPULAR
+            </div>
+            <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">
+              Gold
+            </h3>
+            <div class="text-3xl font-bold text-primary mb-6">
+              ₹7000<span class="text-sm font-normal">/year</span>
+            </div>
+            <ul class="text-left mb-8 space-y-3">
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light"
+                  >20% discount on all services</span
+                >
+              </li>
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light">Free head massage monthly</span>
+              </li>
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light">Priority booking</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300"
+              >Join Now</a
+            >
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl text-center shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+          >
+            <h3 class="text-2xl font-playfair font-bold mb-2 text-text-dark">
+              Platinum
+            </h3>
+            <div class="text-3xl font-bold text-primary mb-6">
+              ₹12000<span class="text-sm font-normal">/year</span>
+            </div>
+            <ul class="text-left mb-8 space-y-3">
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light"
+                  >25% discount on all services</span
+                >
+              </li>
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light">Priority booking</span>
+              </li>
+              <li
+                class="pb-3 border-b border-border-color flex items-center gap-3"
+              >
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-text-light">Free facial every month</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300"
+              >Join Now</a
+            >
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="#"
+            class="inline-block bg-transparent text-primary border-2 border-primary px-8 py-4 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-1"
+            >View All Benefits</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-5">
+        <h2
+          class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary"
+        >
+          What Our Clients Say
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-primary hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="text-primary text-xl mb-4">★★★★★</div>
+            <p class="text-text-light mb-6 italic">
+              "Very relaxing experience. Highly recommended for anyone looking
+              for premium spa services in Indore."
+            </p>
+            <div>
+              <strong class="text-text-dark">Priya Sharma</strong>
+            </div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-primary hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="text-primary text-xl mb-4">★★★★★</div>
+            <p class="text-text-light mb-6 italic">
+              "Best spa in Indore with professional therapists. The ambiance is
+              perfect and the services are exceptional."
+            </p>
+            <div>
+              <strong class="text-text-dark">Rahul Verma</strong>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="#"
+            class="inline-block bg-primary text-white px-8 py-4 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >Read All Reviews</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-white py-16">
+      <div class="max-w-7xl mx-auto px-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="w-10 h-10 flex items-center justify-center">
+                <img src="./img/aarambhlogo.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-xl font-playfair font-bold text-white">
+                  Aarambh
+                </h3>
+                <p class="text-sm text-primary font-medium">Beauty Spa</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Your premium destination for relaxation and rejuvenation in the
+              heart of Indore.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-primary">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Offers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-primary">
+              Our Services
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Swedish Massage</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Aroma Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Facial Treatments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Hair Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors duration-300"
+                  >Body Treatments</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-primary">
+              Contact Info
+            </h4>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-map-marker-alt text-primary mr-2"></i> Zodiac
+              Mall, Bicholi Mardana
+            </p>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-map-marker-alt text-primary mr-2"></i> Near
+              Agrawal Public School, Indore
+            </p>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-phone text-primary mr-2"></i> +91 8889646119
+            </p>
+            <p class="text-gray-300 mb-3">
+              <i class="fas fa-envelope text-primary mr-2"></i>
+              info@aarambhbeautyspa.com
+            </p>
+            <p class="text-gray-300">
+              <i class="fas fa-clock text-primary mr-2"></i> Mon-Sun: 9:00 AM -
+              9:00 PM
+            </p>
+          </div>
+        </div>
+        <div class="text-center pt-8 border-t border-gray-700">
+          <p class="text-gray-400">
+            &copy; 2024 Aarambh Beauty Spa. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/918889646119"
+      class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu -->
+    <div
+      class="fixed inset-0 bg-black/50 z-40 hidden"
+      id="mobileMenuOverlay"
+    ></div>
+    <div
+      class="fixed top-20 left-0 w-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 md:hidden"
+      id="mobileMenu"
+    >
+      <ul class="py-4 space-y-2">
+        <li>
+          <a
+            href="index.html"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Offers</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Membership</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-6 py-3 text-text-dark font-poppins font-medium hover:bg-bg-beige transition-colors duration-300"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block mx-6 mt-4 bg-primary text-white px-6 py-3 rounded-full font-poppins font-semibold text-sm uppercase tracking-wide hover:bg-secondary transition-all duration-300 text-center"
+            >Book Appointment</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

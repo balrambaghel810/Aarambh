@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers & Discounts - Aarambh Beauty Spa</title>
+    <meta name="description" content="Check out our latest offers, discounts, and special packages at Aarambh Beauty Spa in Indore">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d4af37',
+                        secondary: '#8b7355',
+                        accent: '#c9a961',
+                        'text-dark': '#333333',
+                        'text-light': '#666666',
+                        'text-lighter': '#999999',
+                        'bg-light': '#faf8f5',
+                        'bg-beige': '#f5f0e8',
+                        'border-color': '#e8e0d5'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-spa text-white text-xl"></i>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-2xl font-playfair font-bold text-text-dark">Aarambh</h2>
+                    <p class="text-sm font-poppins text-primary font-medium">Beauty Spa</p>
+                </div>
+            </div>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
+                <li><a href="about.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">About</a></li>
+                <li><a href="services.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Services</a></li>
+                <li><a href="offers.html" class="nav-link text-primary font-poppins font-medium text-sm uppercase tracking-wide relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-full after:h-0.5 after:bg-primary">Offers</a></li>
+                <li><a href="membership.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link text-text-dark font-poppins font-medium text-sm uppercase tracking-wide hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Contact</a></li>
+                <li><a href="booking.html" class="btn-book bg-primary text-white px-5 py-2.5 rounded-full font-poppins font-semibold text-xs uppercase tracking-wide hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger md:hidden flex flex-col cursor-pointer">
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark mb-1 transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-text-dark transition-all duration-300"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-32 text-center mt-20">
+        <div class="max-w-7xl mx-auto px-5">
+            <h1 class="text-5xl font-playfair font-bold mb-4">Offers & Discounts</h1>
+            <p class="text-xl opacity-90">Exclusive deals and packages for your spa experience</p>
+        </div>
+    </section>
+
+    <!-- Current Offers Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-playfair font-bold text-center text-text-dark mb-16 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary">Current Special Offers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            
+            <div class="offers-grid">
+                <!-- Weekend Relax Offer -->
+                <div class="offer-card featured">
+                    <div class="offer-badge">LIMITED TIME</div>
+                    <div class="offer-header">
+                        <h3>Weekend Relax Offer</h3>
+                        <div class="discount">20% OFF</div>
+                    </div>
+                    <div class="offer-content">
+                        <p>Get 20% discount on all massage therapies every Saturday and Sunday</p>
+                        <ul class="offer-includes">
+                            <li><i class="fas fa-check"></i> Swedish Massage</li>
+                            <li><i class="fas fa-check"></i> Deep Tissue Massage</li>
+                            <li><i class="fas fa-check"></i> Aroma Therapy</li>
+                            <li><i class="fas fa-check"></i> Thai Massage</li>
+                        </ul>
+                        <div class="offer-details">
+                            <span class="validity">Valid: Every Weekend</span>
+                            <span class="code">Use Code: WEEKEND20</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Weekend Relax Offer')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Festival Glow Offer -->
+                <div class="offer-card">
+                    <div class="offer-badge">FESTIVAL SPECIAL</div>
+                    <div class="offer-header">
+                        <h3>Festival Glow Offer</h3>
+                        <div class="discount">FREE</div>
+                    </div>
+                    <div class="offer-content">
+                        <p>Free Head Massage worth ₹300 with any Facial treatment</p>
+                        <ul class="offer-includes">
+                            <li><i class="fas fa-check"></i> Free Head Massage</li>
+                            <li><i class="fas fa-check"></i> With any Facial</li>
+                            <li><i class="fas fa-check"></i> Instant glow</li>
+                        </ul>
+                        <div class="offer-details">
+                            <span class="validity">Valid: Festival Season</span>
+                            <span class="code">Use Code: FESTIVALGLOW</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Festival Glow Offer')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- First Visit Offer -->
+                <div class="offer-card">
+                    <div class="offer-badge">NEW CUSTOMER</div>
+                    <div class="offer-header">
+                        <h3>First Visit Offer</h3>
+                        <div class="discount">15% OFF</div>
+                    </div>
+                    <div class="offer-content">
+                        <p>15% discount on your first visit for any service</p>
+                        <ul class="offer-includes">
+                            <li><i class="fas fa-check"></i> Valid on all services</li>
+                            <li><i class="fas fa-check"></i> First time customers only</li>
+                            <li><i class="fas fa-check"></i> No minimum purchase</li>
+                        </ul>
+                        <div class="offer-details">
+                            <span class="validity">Always Valid</span>
+                            <span class="code">Use Code: FIRST15</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('First Visit Offer')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Couple Spa Package -->
+                <div class="offer-card featured">
+                    <div class="offer-badge">COUPLE SPECIAL</div>
+                    <div class="offer-header">
+                        <h3>Couple Spa Package</h3>
+                        <div class="discount">25% OFF</div>
+                    </div>
+                    <div class="offer-content">
+                        <p>Save 25% when you book couple treatments</p>
+                        <ul class="offer-includes">
+                            <li><i class="fas fa-check"></i> Two simultaneous treatments</li>
+                            <li><i class="fas fa-check"></i> Private couple room</li>
+                            <li><i class="fas fa-check"></i> Complimentary refreshments</li>
+                        </ul>
+                        <div class="offer-details">
+                            <span class="validity">Valid: All Days</span>
+                            <span class="code">Use Code: COUPLE25</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Couple Spa Package')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Student Discount -->
+                <div class="offer-card">
+                    <div class="offer-badge">STUDENT SPECIAL</div>
+                    <div class="offer-header">
+                        <h3>Student Discount</h3>
+                        <div class="discount">10% OFF</div>
+                    </div>
+                    <div class="offer-content">
+                        <p>Special discount for students with valid ID</p>
+                        <ul class="offer-includes">
+                            <li><i class="fas fa-check"></i> Valid student ID required</li>
+                            <li><i class="fas fa-check"></i> All services included</li>
+                            <li><i class="fas fa-check"></i> Cannot be combined</li>
+                        </ul>
+                        <div class="offer-details">
+                            <span class="validity">Always Valid</span>
+                            <span class="code">Use Code: STUDENT10</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Student Discount')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Corporate Package -->
+                <div class="offer-card">
+                    <div class="offer-badge">CORPORATE</div>
+                    <div class="offer-header">
+                        <h3>Corporate Wellness Package</h3>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                    <div class="offer-content">
+                        <p>Special packages for corporate groups of 5+ people</p>
+                        <ul class="offer-includes">
+                            <li><i class="fas fa-check"></i> Minimum 5 people</li>
+                            <li><i class="fas fa-check"></i> Custom packages available</li>
+                            <li><i class="fas fa-check"></i> Priority booking</li>
+                        </ul>
+                        <div class="offer-details">
+                            <span class="validity">Always Valid</span>
+                            <span class="code">Contact for Details</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Corporate Package')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Offers -->
+    <section class="seasonal-offers">
+        <div class="container">
+            <h2 class="section-title">Seasonal Special Packages</h2>
+            
+            <div class="seasonal-grid">
+                <!-- Monsoon Package -->
+                <div class="seasonal-card">
+                    <div class="seasonal-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Monsoon Package">
+                    </div>
+                    <div class="seasonal-content">
+                        <h3>Monsoon Rejuvenation Package</h3>
+                        <p>Perfect for the rainy season with skin-boosting treatments</p>
+                        <div class="package-includes">
+                            <h4>Package Includes:</h4>
+                            <ul>
+                                <li>Body Scrub</li>
+                                <li>Facial</li>
+                                <li>Head Massage</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="original-price">₹4100</span>
+                            <span class="current-price">₹2999</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Monsoon Rejuvenation Package')">Book Package</button>
+                    </div>
+                </div>
+
+                <!-- Summer Package -->
+                <div class="seasonal-card">
+                    <div class="seasonal-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Summer Package">
+                    </div>
+                    <div class="seasonal-content">
+                        <h3>Summer Cool Down Package</h3>
+                        <p>Beat the heat with our refreshing summer treatments</p>
+                        <div class="package-includes">
+                            <h4>Package Includes:</h4>
+                            <ul>
+                                <li>Aroma Therapy Massage</li>
+                                <li>D-Tan</li>
+                                <li>Manicure + Pedicure</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="original-price">₹3500</span>
+                            <span class="current-price">₹2499</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Summer Cool Down Package')">Book Package</button>
+                    </div>
+                </div>
+
+                <!-- Winter Package -->
+                <div class="seasonal-card">
+                    <div class="seasonal-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Winter Package">
+                    </div>
+                    <div class="seasonal-content">
+                        <h3>Winter Wellness Package</h3>
+                        <p>Warm up and rejuvenate during the cold season</p>
+                        <div class="package-includes">
+                            <h4>Package Includes:</h4>
+                            <ul>
+                                <li>Swedish Massage</li>
+                                <li>Facial</li>
+                                <li>Waxing (Half Body)</li>
+                            </ul>
+                        </div>
+                        <div class="package-price">
+                            <span class="original-price">₹2770</span>
+                            <span class="current-price">₹1999</span>
+                        </div>
+                        <button class="btn-offer" onclick="bookOffer('Winter Wellness Package')">Book Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section class="terms-section">
+        <div class="container">
+            <h2 class="section-title">Terms & Conditions</h2>
+            <div class="terms-content">
+                <div class="terms-grid">
+                    <div class="term-item">
+                        <i class="fas fa-info-circle"></i>
+                        <div>
+                            <h4>Booking Requirements</h4>
+                            <p>Advance booking required for all offers. Subject to availability.</p>
+                        </div>
+                    </div>
+                    <div class="term-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h4>Validity Period</h4>
+                            <p>Offers are valid for the specified period and cannot be extended.</p>
+                        </div>
+                    </div>
+                    <div class="term-item">
+                        <i class="fas fa-exchange-alt"></i>
+                        <div>
+                            <h4>Non-Transferable</h4>
+                            <p>Offers cannot be transferred or exchanged for cash.</p>
+                        </div>
+                    </div>
+                    <div class="term-item">
+                        <i class="fas fa-plus-circle"></i>
+                        <div>
+                            <h4>Cannot Be Combined</h4>
+                            <p>Only one offer can be used per booking. Cannot be combined with other discounts.</p>
+                        </div>
+                    </div>
+                    <div class="term-item">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <h4>ID Required</h4>
+                            <p>Valid ID may be required for specific offers (student, corporate, etc.).</p>
+                        </div>
+                    </div>
+                    <div class="term-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Cancellation Policy</h4>
+                            <p>4-hour advance notice required for cancellations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Save on Your Spa Experience?</h2>
+                <p>Book now with our exclusive offers and enjoy premium treatments at great prices</p>
+                <a href="booking.html" class="btn-primary">Book Your Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aarambh Beauty Spa</h3>
+                    <p>Your sanctuary for relaxation and rejuvenation in Indore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Therapy & Massage</a></li>
+                        <li><a href="services.html">Salon Services</a></li>
+                        <li><a href="services.html">Beauty Treatments</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aarambh Beauty Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

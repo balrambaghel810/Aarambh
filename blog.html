@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Aarambh Beauty Spa</title>
+    <meta name="description" content="Read our spa blog for wellness tips, massage benefits, skincare advice, and beauty treatments at Aarambh Beauty Spa">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Aarambh <span>Beauty Spa</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="membership.html" class="nav-link">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="booking.html" class="nav-link btn-book">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Wellness Blog</h1>
+            <p>Discover tips, insights, and trends in spa therapy and beauty care</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="massage">Massage Therapy</button>
+                <button class="category-btn" data-category="skincare">Skincare</button>
+                <button class="category-btn" data-category="wellness">Wellness Tips</button>
+                <button class="category-btn" data-category="beauty">Beauty Treatments</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Featured Blog Post">
+                </div>
+                <div class="featured-text">
+                    <div class="post-category">Featured</div>
+                    <h2>The Ultimate Guide to Swedish Massage Benefits</h2>
+                    <p>Discover how Swedish massage can transform your physical and mental wellbeing. Learn about the techniques, benefits, and what to expect during your session at Aarambh Beauty Spa.</p>
+                    <div class="post-meta">
+                        <span><i class="fas fa-user"></i> Dr. Priya Nair</span>
+                        <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                        <span><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                    <a href="#" class="btn-primary">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-category="massage">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Deep Tissue Massage">
+                        <div class="blog-overlay">
+                            <span class="read-time">5 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Massage Therapy</div>
+                        <h3>Benefits of Deep Tissue Massage for Chronic Pain</h3>
+                        <p>Learn how deep tissue massage can provide relief from chronic pain and improve muscle function.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Rohit Kumar</span>
+                            <span><i class="fas fa-calendar"></i> March 8, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-category="wellness">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Stress Relief">
+                        <div class="blog-overlay">
+                            <span class="read-time">4 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Wellness Tips</div>
+                        <h3>How Spa Therapy Reduces Stress and Anxiety</h3>
+                        <p>Discover the scientific benefits of spa treatments for mental health and stress management.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Dr. Priya Nair</span>
+                            <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-category="skincare">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Facial Treatment">
+                        <div class="blog-overlay">
+                            <span class="read-time">6 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Skincare</div>
+                        <h3>Best Skincare Treatments for Glowing Skin</h3>
+                        <p>Explore the most effective facial treatments and skincare routines for radiant, healthy skin.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Anjali Sharma</span>
+                            <span><i class="fas fa-calendar"></i> March 3, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-category="massage">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Aroma Therapy">
+                        <div class="blog-overlay">
+                            <span class="read-time">5 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Massage Therapy</div>
+                        <h3>The Healing Power of Aroma Therapy</h3>
+                        <p>Understand how essential oils and aroma therapy can enhance your massage experience.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Dr. Priya Nair</span>
+                            <span><i class="fas fa-calendar"></i> March 1, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card" data-category="beauty">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1585747860715-3ca5e4540d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Hair Care">
+                        <div class="blog-overlay">
+                            <span class="read-time">4 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Beauty Treatments</div>
+                        <h3>Essential Hair Care Tips for Healthy Locks</h3>
+                        <p>Professional tips and treatments for maintaining healthy, beautiful hair all year round.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Anjali Sharma</span>
+                            <span><i class="fas fa-calendar"></i> February 28, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-category="wellness">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Thai Massage">
+                        <div class="blog-overlay">
+                            <span class="read-time">7 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Wellness Tips</div>
+                        <h3>Thai Massage: Ancient Wisdom for Modern Wellness</h3>
+                        <p>Explore the traditional techniques and benefits of Thai massage for flexibility and energy.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Rohit Kumar</span>
+                            <span><i class="fas fa-calendar"></i> February 25, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card" data-category="skincare">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Seasonal Skincare">
+                        <div class="blog-overlay">
+                            <span class="read-time">5 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Skincare</div>
+                        <h3>Seasonal Skincare: Adapting Your Routine</h3>
+                        <p>Learn how to adjust your skincare routine for different seasons and weather conditions.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Anjali Sharma</span>
+                            <span><i class="fas fa-calendar"></i> February 22, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card" data-category="beauty">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1610994875542-7bf1b6b3a6d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nail Care">
+                        <div class="blog-overlay">
+                            <span class="read-time">4 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Beauty Treatments</div>
+                        <h3>The Art of Nail Care: Trends and Tips</h3>
+                        <p>Discover the latest nail art trends and essential tips for maintaining healthy nails.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Anjali Sharma</span>
+                            <span><i class="fas fa-calendar"></i> February 20, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card" data-category="massage">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Couple Massage">
+                        <div class="blog-overlay">
+                            <span class="read-time">6 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Massage Therapy</div>
+                        <h3>Couple Massage: Perfect for Romantic Wellness</h3>
+                        <p>Experience the benefits of couple massage for relationship bonding and shared relaxation.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Dr. Priya Nair</span>
+                            <span><i class="fas fa-calendar"></i> February 18, 2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Wellness Tips</h2>
+                <p>Subscribe to our newsletter for the latest spa trends, wellness advice, and exclusive offers</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </div>
+                </form>
+                <div class="newsletter-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Weekly wellness tips</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-tag"></i>
+                        <span>Exclusive offers</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-book"></i>
+                        <span>Latest blog posts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tags -->
+    <section class="tags-section">
+        <div class="container">
+            <h3>Popular Topics</h3>
+            <div class="tags-cloud">
+                <a href="#" class="tag">Massage Therapy</a>
+                <a href="#" class="tag">Skincare</a>
+                <a href="#" class="tag">Wellness</a>
+                <a href="#" class="tag">Beauty Tips</a>
+                <a href="#" class="tag">Stress Relief</a>
+                <a href="#" class="tag">Aroma Therapy</a>
+                <a href="#" class="tag">Hair Care</a>
+                <a href="#" class="tag">Facial Treatment</a>
+                <a href="#" class="tag">Nail Art</a>
+                <a href="#" class="tag">Body Scrub</a>
+                <a href="#" class="tag">Thai Massage</a>
+                <a href="#" class="tag">Deep Tissue</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Our Treatments?</h2>
+                <p>Book an appointment and try the services you've read about in our blog</p>
+                <a href="booking.html" class="btn-primary">Book Your Treatment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aarambh Beauty Spa</h3>
+                    <p>Your sanctuary for relaxation and rejuvenation in Indore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Therapy & Massage</a></li>
+                        <li><a href="services.html">Salon Services</a></li>
+                        <li><a href="services.html">Beauty Treatments</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aarambh Beauty Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

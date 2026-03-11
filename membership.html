@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Program - Aarambh Beauty Spa</title>
+    <meta name="description" content="Join our exclusive membership program at Aarambh Beauty Spa and enjoy premium benefits and discounts">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Aarambh <span>Beauty Spa</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="membership.html" class="nav-link active">Membership</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="booking.html" class="nav-link btn-book">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Membership Program</h1>
+            <p>Join our exclusive loyalty program and enjoy premium benefits</p>
+        </div>
+    </section>
+
+    <!-- Membership Benefits -->
+    <section class="membership-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Why Join Our Membership Program?</h2>
+                <p>At Aarambh Beauty Spa, we believe in rewarding our loyal customers. Our membership program offers exclusive benefits, significant savings, and priority access to our premium services. Choose the perfect membership tier that suits your wellness needs and budget.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-percentage"></i>
+                        <h3>Exclusive Discounts</h3>
+                        <p>Save on every service with member-exclusive rates</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Priority Booking</h3>
+                        <p>Book your preferred slots before non-members</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-gift"></i>
+                        <h3>Free Services</h3>
+                        <p>Enjoy complimentary treatments every month</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-crown"></i>
+                        <h3>VIP Treatment</h3>
+                        <p>Experience premium service and special perks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section class="membership-plans">
+        <div class="container">
+            <h2 class="section-title">Choose Your Membership</h2>
+            
+            <div class="membership-cards">
+                <!-- Silver Membership -->
+                <div class="membership-card">
+                    <div class="card-header">
+                        <div class="membership-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Silver Membership</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">3000</span>
+                            <span class="period">/year</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>10% discount on all services</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Priority booking</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Complimentary herbal tea</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Free consultation</span>
+                            </li>
+                            <li class="excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Free monthly services</span>
+                            </li>
+                            <li class="excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Exclusive event access</span>
+                            </li>
+                            <li class="excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Personal therapist</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="btn-membership" onclick="selectMembership('Silver')">Join Silver</button>
+                    </div>
+                </div>
+
+                <!-- Gold Membership -->
+                <div class="membership-card featured">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="card-header">
+                        <div class="membership-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Gold Membership</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">7000</span>
+                            <span class="period">/year</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>20% discount on all services</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Free head massage monthly</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Priority booking</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Complimentary refreshments</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Free consultation</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Exclusive event access</span>
+                            </li>
+                            <li class="excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Personal therapist</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="btn-membership" onclick="selectMembership('Gold')">Join Gold</button>
+                    </div>
+                </div>
+
+                <!-- Platinum Membership -->
+                <div class="membership-card">
+                    <div class="card-header">
+                        <div class="membership-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Platinum Membership</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">12000</span>
+                            <span class="period">/year</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>25% discount on all services</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Priority booking</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Free facial every month</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Personal therapist assignment</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>VIP treatment room access</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Exclusive event access</span>
+                            </li>
+                            <li class="included">
+                                <i class="fas fa-check"></i>
+                                <span>Free home consultation</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="btn-membership" onclick="selectMembership('Platinum')">Join Platinum</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Membership Comparison</h2>
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div class="feature-column">Features</div>
+                    <div class="plan-column">Silver</div>
+                    <div class="plan-column featured">Gold</div>
+                    <div class="plan-column">Platinum</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-column">Annual Price</div>
+                    <div class="plan-column">₹3000</div>
+                    <div class="plan-column featured">₹7000</div>
+                    <div class="plan-column">₹12000</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-column">Service Discount</div>
+                    <div class="plan-column">10%</div>
+                    <div class="plan-column featured">20%</div>
+                    <div class="plan-column">25%</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-column">Priority Booking</div>
+                    <div class="plan-column"><i class="fas fa-check"></i></div>
+                    <div class="plan-column featured"><i class="fas fa-check"></i></div>
+                    <div class="plan-column"><i class="fas fa-check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-column">Free Monthly Service</div>
+                    <div class="plan-column"><i class="fas fa-times"></i></div>
+                    <div class="plan-column featured">Head Massage</div>
+                    <div class="plan-column">Facial</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-column">Personal Therapist</div>
+                    <div class="plan-column"><i class="fas fa-times"></i></div>
+                    <div class="plan-column featured"><i class="fas fa-times"></i></div>
+                    <div class="plan-column"><i class="fas fa-check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-column">VIP Room Access</div>
+                    <div class="plan-column"><i class="fas fa-times"></i></div>
+                    <div class="plan-column featured"><i class="fas fa-times"></i></div>
+                    <div class="plan-column"><i class="fas fa-check"></i></div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="feature-column">Event Access</div>
+                    <div class="plan-column"><i class="fas fa-times"></i></div>
+                    <div class="plan-column featured"><i class="fas fa-check"></i></div>
+                    <div class="plan-column"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Form -->
+    <section class="membership-form-section">
+        <div class="container">
+            <h2 class="section-title">Join Our Membership Program</h2>
+            <div class="form-container">
+                <form id="membershipForm" class="membership-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="memberName">Full Name *</label>
+                            <input type="text" id="memberName" name="memberName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="memberPhone">Phone Number *</label>
+                            <input type="tel" id="memberPhone" name="memberPhone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="memberEmail">Email Address *</label>
+                            <input type="email" id="memberEmail" name="memberEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="membershipPlan">Select Membership Plan *</label>
+                            <select id="membershipPlan" name="membershipPlan" required>
+                                <option value="">Choose a plan...</option>
+                                <option value="Silver">Silver Membership - ₹3000/year</option>
+                                <option value="Gold">Gold Membership - ₹7000/year</option>
+                                <option value="Platinum">Platinum Membership - ₹12000/year</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="memberMessage">Additional Information (Optional)</label>
+                        <textarea id="memberMessage" name="memberMessage" rows="4" placeholder="Tell us about your wellness goals..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="memberTerms" name="memberTerms" required>
+                            <span class="checkmark"></span>
+                            I agree to the membership terms and conditions
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Submit Membership Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How do I activate my membership?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After submitting your application and payment, your membership will be activated immediately. You'll receive a confirmation email with your membership details.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I upgrade my membership plan?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade your membership at any time. The difference in price will be calculated on a pro-rata basis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Are membership benefits transferable?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, membership benefits are non-transferable and can only be used by the registered member.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What happens if I miss my free monthly service?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Free monthly services must be used within the calendar month. They cannot be carried forward to the next month.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I cancel my membership?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Memberships are annual and non-refundable. However, you can choose not to renew at the end of your term.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do members get additional discounts on offers?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Membership discounts cannot be combined with other promotional offers. You'll always receive the better of the two discounts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Wellness Journey?</h2>
+                <p>Join our membership program and enjoy exclusive benefits and savings</p>
+                <a href="booking.html" class="btn-primary">Book Your First Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aarambh Beauty Spa</h3>
+                    <p>Your sanctuary for relaxation and rejuvenation in Indore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Therapy & Massage</a></li>
+                        <li><a href="services.html">Salon Services</a></li>
+                        <li><a href="services.html">Beauty Treatments</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zodiac Mall, Bicholi Mardana<br>Near Agrawal Public School, Indore</p>
+                    <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@aarambhbeautyspa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aarambh Beauty Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
